@@ -20,12 +20,12 @@ To create an app comprising of four services.  Service 1 acts as a Front End for
 **List of Required Technologies**
 
 Trello Board <br />
-Orchestration Tool: Docker Swarm <br />
-Version Control: Git <br /> 
-CI Server: Jenkins <br />
-Configuration Management: Ansible <br />
-Cloud server: GCP virtual machines <br />
-Reverse Proxy: NGINX <br />
-Containerisation: Docker <br />
+Orchestration Tool: *Docker Swarm* <br />
+Version Control: *Git* <br /> 
+CI Server: *Jenkins* <br />
+Configuration Management: *Ansible* <br />
+Cloud server: *GCP virtual machines* <br />
+Reverse Proxy: *NGINX* <br />
+Containerisation: *Docker* <br />
 
 
