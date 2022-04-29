@@ -19,8 +19,8 @@ To create an app comprising of four services.  Service 1 acts as a Front End for
 
 List of Required Technologies
 
-Trello Board
-Version Control: Git 
+Trello Board -
+Version Control: Git - 
 CI Server: Jenkins 
 Configuration Management: Ansible 
 Cloud server: GCP virtual machines
