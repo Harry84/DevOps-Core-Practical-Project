@@ -30,4 +30,29 @@ Cloud server: *GCP virtual machines* <br />
 Reverse Proxy: *NGINX* <br />
 Containerisation: *Docker* <br />
 
+# Trello Board
+
+I used a trello board during this project for planning and prioritisation of tasks.  Each week was treated as a seperate sprint with it's own backlog.
+
+#  ERD
+
+# Risk Assessment
+
+# Description of services and Database
+# Diagram of services and how the interact
+
+# CDP (Continuous Deployment Pipeline)
+
+Develop Build (inc Testing) Deploy description
+
+# Testing Process and how it was incorporated into Continous Deployment
+
+# Rolling Update
+
+# Future Developments
+
+# Acknowledgements
+
+
+
 
