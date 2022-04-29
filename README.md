@@ -17,7 +17,7 @@ To create an app comprising of four services.  Service 1 acts as a Front End for
 6. An Ansible Playbook that provisions the environment needed for the application run.
 7. A reverse proxy to make the application accessible to the user.
 
-List of Required Technologies
+**List of Required Technologies**
 
 Trello Board <br />
 Orchestration Tool: Docker Swarm <br />
