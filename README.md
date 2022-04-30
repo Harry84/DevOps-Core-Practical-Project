@@ -32,7 +32,7 @@ Containerisation: *Docker* <br />
 
 # Trello Board
 
-I used a trello board during this project for planning and prioritisation of tasks.  Each week was treated as a separate sprint with it's own backlog.
+I used a trello board during this project for planning and prioritisation of tasks.  Each week was treated as a separate sprint with its own backlog.
 
 [Trello Board](https://trello.com/b/ufgHK3VC/pilot-tiers)
 
