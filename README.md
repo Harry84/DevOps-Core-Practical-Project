@@ -40,6 +40,8 @@ I used a trello board during this project for planning and prioritisation of tas
 
 # Risk Assessment
 
+[Risk Assessment](https://docs.google.com/spreadsheets/d/1SNXdg196MBaFU69MoC1mMkt9sLWLh0RzoJxBbpi-0C8/edit#gid=0)
+
 # Description of services and Database
 # Diagram of services and how the interact
 
