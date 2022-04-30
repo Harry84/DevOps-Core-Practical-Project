@@ -1,7 +1,13 @@
 Flask
+flask_testing
 gunicorn
 itsdangerous
 Jinja2
 MarkupSafe
 Werkzeug
 requests
+requests_mock
+pytest
+pytest-cov
+flask-sqlalchemy
+pymysql
