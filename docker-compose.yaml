@@ -32,6 +32,6 @@ services:
     build: ./tier_api
 
 
-  # service_4:
-  #   container_name: service_4
-  #   build: ./service_4
+  service_4:
+    container_name: service_4
+    build: ./service_4
