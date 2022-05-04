@@ -1,7 +1,6 @@
-from application import app
-from application import pilot_name
 from flask import url_for
 from flask_testing import TestCase
+from application import app, pilot_name
 
 # from application import app
 # from application import pilot_name

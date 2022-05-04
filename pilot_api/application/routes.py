@@ -1,5 +1,5 @@
-from application import app 
 from flask import Flask, request, Response 
+from application import app
 import random
 
 @app.route('/get_pilot',methods=['GET'])
