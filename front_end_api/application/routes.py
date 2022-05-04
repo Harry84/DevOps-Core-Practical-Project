@@ -4,7 +4,7 @@ import requests, json
 
 
 @app.route('/', methods=['POST', 'GET'])
-def home(): 
+def index(): 
     pilot = requests.get('http://pilot_api:5000/get_pilot').text
     tier = requests.get('http://tier_api:5000/get_tier').text
 
