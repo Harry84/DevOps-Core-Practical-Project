@@ -1,8 +1,8 @@
-from flask import url_for, Response
 from flask_testing import TestCase
+from flask import url_for, Response
 from requests_mock import mock
 
-from application import app
+from front_end_api.application import app
 
 class TestBase(TestCase):
 
