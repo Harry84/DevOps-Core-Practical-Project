@@ -31,6 +31,6 @@ class TestViews(TestBase):
         #         else:
         #             self.assertIn("bot", response.data.decode())
     
-        response = self.client.get(url_for('post_status'), json={"pilot": "Sullustan", "tier": "A Tier"})
+        response = self.client.post(url_for('post_status'), json={"pilot": "Sullustan", "tier": "A Tier"})
         self.assertEqual(response.status_code, 200)
         self.assertIn(b'Parent', response.data)
