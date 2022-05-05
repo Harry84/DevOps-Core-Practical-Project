@@ -19,7 +19,8 @@ services:
     build: ./front_end_api
     depends_on: 
     - pilot_api
-    - tier_api 
+    - tier_api
+    # - service_4 
 
   pilot_api: 
     container_name: pilot_api
@@ -29,3 +30,8 @@ services:
   tier_api:
     container_name: tier_api 
     build: ./tier_api
+
+
+  service_4:
+    container_name: service_4
+    build: ./service_4
