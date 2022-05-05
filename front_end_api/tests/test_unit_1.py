@@ -1,6 +1,8 @@
 from flask_testing import TestCase
 from flask import url_for, Response
-from requests_mock import mock
+import requests_mock
+import pytest
+from unittest.mock import patch
 
 from front_end_api.application import app
 
@@ -11,21 +13,33 @@ class TestBase(TestCase):
 
 class TestResponse(TestBase):
 
-    def test_index(self):
+    def test_index_get(self):       
+            
+        pilot = "Sullustan"
+        tier = "A Tier"
+        json ={
+            "pilot": "Sullustan",
+            "tier": "A Tier",
+            "message": "Don't give up the day job"
+        } 
 
-        with mock() as m:
-            m.get('http://pilot_api:5000/get_pilot', text='Bomber')
-            m.get('http://tier_api:5000/get_tier', text="A Tier")
-            m.post('http://service-4:5000/post/status', json={
-                "pilot": "Bomber",
-                "tier": "A Tier",
-                "message": "What a bot!"
-            })
+        with requests_mock.Mocker() as m:
+            m.get('http://pilot_api:5000/get_pilot', text=pilot)
+            m.get('http://tier_api:5000/get_tier', text=tier)
+            m.post('http://service_4:5000/post/status', json=json)
 
             response = self.client.get(url_for('index'))
 
 
-        self.assert200(response)
-        self.assertIn("Bomber", response.data.decode())
+        self.assertEqual(response.status_code, 200)
+        self.assertIn("Sullustan", response.data.decode())
         self.assertIn("A Tier", response.data.decode())
-        self.assertIn("What a bot!", response.data.decode())
+        self.assertIn("Don't give up the day job", response.data.decode())
+
+        # with patch ("random.choice") as g:
+        #     g.return_value.text = "Interceptor"
+
+        #     response = self.client.get(url_for('index'))
+        #     assert response.status_code == 200
+        #      self.assertIn(b'Interceptor', response.data)
+            
