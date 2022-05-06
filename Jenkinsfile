@@ -6,13 +6,12 @@ pipeline {
                 sh "bash test.sh"
             }
         }
-        }
-        stage('Installing dependencies'){
-            steps{
+        stage('Installing dependencies') {
+            steps {
                 sh "bash dependencies.sh"
             }
         }
-        stage('Build and push images') {
+        stage ('Build and push images') {
             environment {
                 DOCKER_UNAME = credentials('docker_uname')
                 DOCKER_PWORD = credentials('docker_pword')
