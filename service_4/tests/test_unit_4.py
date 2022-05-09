@@ -18,7 +18,7 @@ class TestViews(TestBase):
 
         #         json = {'pilot':i, 'tier':j}
             
-        #         response = self.client.get(url_for('post_status'), json=json)
+        #         response = self.client.post(url_for('post_status'), json=json)
 
         #         self.assert200(response)
 
