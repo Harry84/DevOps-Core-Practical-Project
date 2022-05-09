@@ -27,10 +27,12 @@ pipeline {
         //         sh "ansible-playbook -i ansible/inventory.yaml ansible/playbook.yaml"
         //     }
         // }
-        // stage ('Deploy') {
-        //     steps {
-        //         sh "bash scripts/deploy.sh"
-        //     }
-        // }
+        stage ('Deploy') {
+            steps {
+                sh "scp -i ~/.ssh/ansible_id_rsa docker-compose.yaml swarm-manager:/home/jenkins/docker-compose.yaml"
+                sh "scp -i ~/.ssh/ansible_id_rsa nginx.conf swarm-manager:/home/jenkins/nginx.conf"
+                sh "ansible-playbook -i ansible/inventory.yaml ansible/playbook.yaml"
+            }
+        }
     }
 }
