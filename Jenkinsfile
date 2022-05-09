@@ -8,7 +8,7 @@ pipeline {
         }
         // stage('Installing dependencies') {
         //     steps {
-        //         sh "bash dependencies.sh"
+        //         sh "bash scripts/dependencies.sh"
         //     }
         // }
         stage ('Build and push images') {
@@ -22,5 +22,15 @@ pipeline {
                 sh "docker-compose push"
             }
         }
+        // stage ('Run ansible tasks') {
+        //     steps {
+        //         sh "ansible-playbook -i ansible/inventory.yaml ansible/playbook.yaml"
+        //     }
+        // }
+        // stage ('Deploy') {
+        //     steps {
+        //         sh "bash scripts/deploy.sh"
+        //     }
+        // }
     }
 }

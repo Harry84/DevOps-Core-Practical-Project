@@ -18,6 +18,8 @@ services:
     container_name: front_end_api
     image: docker.io/harryleventon/front_end_api:latest
     build: ./front_end_api
+    # deploy:
+    #   replicas: 3
     depends_on: 
     - pilot_api
     - tier_api
@@ -27,18 +29,24 @@ services:
     container_name: pilot_api
     image: docker.io/harryleventon/pilot_api:latest
     build: ./pilot_api
+    # deploy:
+    #   replicas: 3
 
 
   tier_api:
     container_name: tier_api
     image: docker.io/harryleventon/tier_api:latest
     build: ./tier_api
+    # deploy:
+    #   replicas: 3
 
 
   service_4:
     container_name: service_4
     image: docker.io/harryleventon/service_4:latest
     build: ./service_4
+    # deploy:
+    #   replicas: 3
 
 
 # registry/owner/name:tag  docker.io/harryleventon/front_end_api:latest
