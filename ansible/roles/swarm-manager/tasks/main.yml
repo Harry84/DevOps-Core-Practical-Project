@@ -1,12 +1,9 @@
 ---
 # tasks file for swarm-manager
-- name: "Init swarm"
+- name: Init swarm
   docker_swarm:
     state: present
-
-- name: "get swarm info"
-  docker_swarm_info:
-  register: info
+  register: swarm_info
 
 - name: "pip install"
   pip: 
