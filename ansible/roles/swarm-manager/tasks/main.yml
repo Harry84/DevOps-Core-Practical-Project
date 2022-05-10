@@ -7,6 +7,10 @@
 - name: "get swarm info"
   docker_swarm_info:
   register: info
+
+- name: "pip install"
+  pip: 
+    name: jsondiff
   
 - name: "Deploy app"
   docker_stack:
@@ -14,3 +18,4 @@
     name: pilot_tier_generator
     compose:
       - /home/jenkins/docker-compose.yaml
+
