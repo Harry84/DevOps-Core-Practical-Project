@@ -21,7 +21,7 @@ pipeline {
                 sh "docker login -u $DOCKER_UNAME -p $DOCKER_PWORD"
                 sh "docker-compose push"
             }
-        // }
+        }
         // stage ('Run ansible tasks') {
         //     steps {
         //         sh "ansible-playbook -i ansible/inventory.yaml ansible/playbook.yaml"
