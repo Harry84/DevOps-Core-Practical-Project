@@ -2,6 +2,7 @@
 # tasks file for dockerinstall
 - name: Installing dependencies for docker
   apt:
+    update_cache: yes
     pkg:
       - apt-transport-https
       - ca-certificates
