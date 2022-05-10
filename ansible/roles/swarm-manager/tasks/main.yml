@@ -9,10 +9,10 @@
   pip: 
     name: jsondiff
   
-# - name: "Deploy app"
-#   docker_stack:
-#     state: present
-#     name: pilot_tier_generator
-#     compose:
-#       - /home/jenkins/docker-compose.yaml
+- name: "Deploy app"
+  docker_stack:
+    state: present
+    name: pilot_tier_generator
+    compose:
+      - /home/jenkins/docker-compose.yaml
 
