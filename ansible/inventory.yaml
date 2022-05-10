@@ -1,8 +1,8 @@
 all:
   children:
-    nginx:
-      hosts:
-        load-balancer:
+    # nginx:
+    #   hosts:
+    #     load-balancer:
     swarm_managers:
       hosts:
         swarm-manager:
@@ -11,7 +11,7 @@ all:
         swarm-worker:
 
   vars:    
-    ansible_user: jenkins
-    ansible_ssh_private_key_file: '~/.ssh/ansible_id_rsa'
-    ansible_python_interpreter: "/usr/bin/python3"
-    # ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
+    # ansible_user: jenkins
+    # ansible_ssh_private_key_file: '~/.ssh/ansible_id_rsa'
+    # ansible_python_interpreter: "/usr/bin/python3"
+    ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
