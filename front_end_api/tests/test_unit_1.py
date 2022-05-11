@@ -16,11 +16,11 @@ class TestResponse(TestBase):
     def test_index_get(self):       
             
         pilot = "Sullustan"
-        tier = "A Tier"
+        tier = "B Tier"
         json ={
             "pilot": "Sullustan",
-            "tier": "A Tier",
-            "message": "amassing near Sullust"
+            "tier": "B Tier",
+            "message": "Amassing near Sullust"
         } 
 
         with requests_mock.Mocker() as m:
@@ -33,7 +33,7 @@ class TestResponse(TestBase):
 
         self.assertEqual(response.status_code, 200)
         self.assertIn("Sullustan", response.data.decode())
-        self.assertIn("A Tier", response.data.decode())
+        self.assertIn("B Tier", response.data.decode())
         self.assertIn("Amassing near Sullust", response.data.decode())
 
         # with patch ("random.choice") as g:
