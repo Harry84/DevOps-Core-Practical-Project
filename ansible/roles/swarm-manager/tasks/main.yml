@@ -1,0 +1,18 @@
+---
+# tasks file for swarm-manager
+- name: Init swarm
+  docker_swarm:
+    state: present
+  register: swarm_info
+
+- name: "pip install"
+  pip: 
+    name: jsondiff
+  
+- name: "Deploy app"
+  docker_stack:
+    state: present
+    name: pilot_tier_generator
+    compose:
+      - /home/jenkins/docker-compose.yaml
+

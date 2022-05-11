@@ -1,0 +1,15 @@
+---
+# tasks file for load-balancer
+- name: Installing NGINX
+  apt:
+    name: nginx
+    state: present
+  notify: Restart nginx
+
+- name: Copy nginx file
+  copy:
+    src: nginx.conf
+    dest: /etc/nginx/nginx.conf
+  register: nginx_config
+  notify: Restart nginx
+
