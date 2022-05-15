@@ -1,6 +1,3 @@
-# DevOps-Core-Practical-Project
-QA DevOps Pathway Core Practical Project
-
 # Pilots and Tier Random Assignment
 
 # Task
