@@ -37,8 +37,6 @@ I used a trello board during this project for planning and prioritisation of tas
 <img src="https://github.com/Harry84/DevOps-Core-Practical-Project/blob/ansible/images/Project%202%20trello.JPG" width="1000"/>
 </p>
 
-#  ERD
-
 # Risk Assessment
 
 [Risk Assessment](https://docs.google.com/spreadsheets/d/1SNXdg196MBaFU69MoC1mMkt9sLWLh0RzoJxBbpi-0C8/edit#gid=0)
@@ -86,5 +84,7 @@ The Jenkins user needs a way of accessing the manager node and worker node in or
 Having multiple replicas for each service running across a Manager and Worker node enables a rolling update.  Firstly we configure a webhook for our Jenkins job/pipeline.  This is done under settings on our Github repo, where we supply the ip for our Jenkins VM.  We want a new build to trigger every time a push event occurs on whatever branch we have specified in our Jenkins job/pipeline configuration.  This means if ever a new version of the app is rolled out (by pushing it from the dev branch to main), a new build is triggered in the Jenkins Pipeline.  The replicas then receive the new changes one by one meaning that there are always a number of replicas with a version of the codebase running, thereby keeping the app in continuous delivery whilst allowing it to be updated at the same time.  Please find a quick demo of this in action in my presentation video below.
 
 # Future Developments
+
+A enxt step would be the inclusion of a database to persist data.  I would also like to add external data sources to populate it such as excel files using actual squadrons league data.  This would allow the creation of tier lists based on real data which could then be compared to more subjective tier lists to identify a difference in percieved ability and more objective measures of actual performance.  This as well as providing a source of entertainment could provide the Squadrons community valuable insight and act as a prototype for other games to drive community engagement.  Eventually it could be a basis for a tier list creation app that might include random elements for entertainment value or in turn act as a basis for a kind of top trumps or fantasy league type game.
 
 # Acknowledgements
