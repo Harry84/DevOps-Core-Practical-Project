@@ -1,7 +1,4 @@
-# DevOps-Core-Practical-Project
-QA DevOps Pathway Core Practical Project
-
-# Pilots and Tier Random Assignment
+# Pilot Tier Random Assignment Generator
 
 # Task
 
@@ -16,7 +13,7 @@ The app will comprise four services.  Service 1 acts as a Front End for Service 
 3. Application built through a CI server and deployed to a cloud-based virtual machine. 
 4. Webhooks such that Jenkins rebuilds and redeploys the newest version of the application whenever the main branch is updated (i.e. a change to the codebase)
 5. Project uses Service-Oriented architecture: both containerisation and an orchestration tool.
-6. An Ansible Playbook that provisions the environment needed for the application run.
+6. An Ansible Playbook that provisions the environment needed for the application to run.
 7. A reverse proxy to make the application accessible to the user.
 
 **List of Required Technologies**
@@ -36,11 +33,17 @@ I used a trello board during this project for planning and prioritisation of tas
 
 [Trello Board](https://trello.com/b/ufgHK3VC/pilot-tiers)
 
-#  ERD
+<p align="center">
+<img src="https://github.com/Harry84/DevOps-Core-Practical-Project/blob/ansible/images/Project%202%20trello.JPG" width="1000"/>
+</p>
 
 # Risk Assessment
 
 [Risk Assessment](https://docs.google.com/spreadsheets/d/1SNXdg196MBaFU69MoC1mMkt9sLWLh0RzoJxBbpi-0C8/edit#gid=0)
+
+<p align="center">
+<img src="https://github.com/Harry84/DevOps-Core-Practical-Project/blob/ansible/images/Project%202%20Risk%20Assessment.JPG" width="2000"/>
+</p>
 
 # Description of services
 
@@ -48,13 +51,21 @@ Service 1 aka front_end_api is what is displayed using render_template to my ind
 
 # Diagram of services and how they interact
 
+<p align="center">
+<img src="https://github.com/Harry84/DevOps-Core-Practical-Project/blob/ansible/images/Services%20Diagram.jpg" width="800"/>
+</p>
+
 # CDP (Continuous Deployment Pipeline)
 
 A key required facet of the project is one of continous deployment, such that the end user may access the app and not experience any downtime or loss of service in the event changes to the codebase are being made through successive builds - essentially simulating how an app would function in the wild, albeit an extremely paired down version of one.  In order to meet this objective we use a combination of tools, namely Docker, Docker-Swarm, Jenkins and Ansible.  Once the app is functional and can be run using a docker-compose file, Dockerfiles for the respective services and an Nginx reverse-proxy, we can go about deploying it in a pipeline environment.  Firstly, the repo is uploaded to Github.  Secondly, we set up a Jenkins VM and configure a Jenkins Pipeline Job using our new repo.  Using a Jenkinsfile in our repo, we can lay out the various stages we require to test, build and deploy our app.
 
 # Testing Stage
 
-We include a tests folder in each of the respective services containing a test_ unit test relating to its parent service.  Is the service reachable (do we get a 200 response) and are we getting back the data we put in in the way we expect?  The testing process is the first stage in the Jenkinsfile.  We need to make sure all the individual components are working in the way we want them to before we instruct Jenkins to build our app.  The testing process is therefore a necessary first stage in continuous deployment.
+We include a tests folder in each of the respective services containing a test_ unit test relating to its parent service.  Is the service reachable (do we get a 200 response) and are we getting back the data we put in in the way we expect?  The testing process is the first stage in the Jenkinsfile.  We need to make sure all the individual components are working in the way we want them to before we instruct Jenkins to build our app.  The testing process is therefore a necessary first stage in continuous deployment.  The below image shows the testing coverage attained in the project:
+
+<p align="center">
+<img src="https://github.com/Harry84/DevOps-Core-Practical-Project/blob/ansible/images/testing%20project%202.JPG" width="700"/>
+</p>
 
 # Build Stage
 
@@ -74,4 +85,13 @@ Having multiple replicas for each service running across a Manager and Worker no
 
 # Future Developments
 
+A enxt step would be the inclusion of a database to persist data.  I would also like to add external data sources to populate it such as excel files using actual squadrons league data.  This would allow the creation of tier lists based on real data which could then be compared to more subjective tier lists to identify a difference in percieved ability and more objective measures of actual performance.  This as well as providing a source of entertainment could provide the Squadrons community valuable insight and act as a prototype for other games to drive community engagement.  Eventually it could be a basis for a tier list creation app that might include random elements for entertainment value or in turn act as a basis for a kind of top trumps or fantasy league type game.
+
 # Acknowledgements
+
+Thanks to all the QA tutors along the way who provided much needed guidance!
+
+# Video Demo
+
+[Video Demo](https://youtu.be/StPZ4MkuYBw)
+
