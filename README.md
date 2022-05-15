@@ -44,7 +44,7 @@ I used a trello board during this project for planning and prioritisation of tas
 
 # Description of services
 
-Service 1 aka front_end_api is what is displayed using render_template to my index.html.  pilot_api assigns a pilot name chosen at random from a list.  tier_api does the same but this time for the tier.  The front end uses a get request to access these strings and then sends them to service_4 where the additional logic is applied regarding which message to assign a given pilot and tier.  The message, tier and pilot are then returned as a json which in turn the front end uses when displaying a final statement including all the randomly generated information via render_template.  Please see my presentation video linked below for further clarification.
+Service 1 aka front_end_api is what is displayed using render_template to my index.html.  pilot_api assigns a pilot name chosen at random from a list.  tier_api does the same but this time for the tier.  The front end uses a get request to access these strings and then sends them to service_4 (which itself receives HTTP POST requests from the front end) where the additional logic is applied regarding which message to assign a given pilot and tier.  The message, tier and pilot are then returned as a json which in turn the front end uses when displaying a final statement including all the randomly generated information via render_template.  A reverse proxy using an NGINX service directs traffic from port 80 on the host to port 5000 on the front-end_api container.  Please see my presentation video linked below for further clarification.
 
 # Diagram of services and how they interact
 
