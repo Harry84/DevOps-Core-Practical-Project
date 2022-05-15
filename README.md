@@ -88,3 +88,9 @@ Having multiple replicas for each service running across a Manager and Worker no
 A enxt step would be the inclusion of a database to persist data.  I would also like to add external data sources to populate it such as excel files using actual squadrons league data.  This would allow the creation of tier lists based on real data which could then be compared to more subjective tier lists to identify a difference in percieved ability and more objective measures of actual performance.  This as well as providing a source of entertainment could provide the Squadrons community valuable insight and act as a prototype for other games to drive community engagement.  Eventually it could be a basis for a tier list creation app that might include random elements for entertainment value or in turn act as a basis for a kind of top trumps or fantasy league type game.
 
 # Acknowledgements
+
+Thanks to all the QA tutors along the way who provided much needed guidance!
+
+# Video Demo
+
+[Video Demo](https://youtu.be/StPZ4MkuYBw)
