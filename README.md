@@ -57,7 +57,7 @@ Service 1 aka front_end_api is what is displayed using render_template to my ind
 # Diagram of services and how they interact
 
 <p align="center">
-<img src="https://github.com/Harry84/DevOps-Core-Practical-Project/blob/ansible/images/Services%20Diagram.jpg" width="1800"/>
+<img src="https://github.com/Harry84/DevOps-Core-Practical-Project/blob/ansible/images/Services%20Diagram.jpg" width="800"/>
 </p>
 
 # CDP (Continuous Deployment Pipeline)
