@@ -13,7 +13,7 @@ The app will comprise four services.  Service 1 acts as a Front End for Service 
 3. Application built through a CI server and deployed to a cloud-based virtual machine. 
 4. Webhooks such that Jenkins rebuilds and redeploys the newest version of the application whenever the main branch is updated (i.e. a change to the codebase)
 5. Project uses Service-Oriented architecture: both containerisation and an orchestration tool.
-6. An Ansible Playbook that provisions the environment needed for the application run.
+6. An Ansible Playbook that provisions the environment needed for the application to run.
 7. A reverse proxy to make the application accessible to the user.
 
 **List of Required Technologies**
