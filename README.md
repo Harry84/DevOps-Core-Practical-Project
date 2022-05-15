@@ -1,4 +1,4 @@
-# Pilots and Tier Random Assignment
+# Pilot Tier Random Assignment Generator
 
 # Task
 
