@@ -47,7 +47,7 @@ I used a trello board during this project for planning and prioritisation of tas
 [Risk Assessment](https://docs.google.com/spreadsheets/d/1SNXdg196MBaFU69MoC1mMkt9sLWLh0RzoJxBbpi-0C8/edit#gid=0)
 
 <p align="center">
-<img src="https://github.com/Harry84/DevOps-Core-Practical-Project/blob/ansible/images/Project%202%20Risk%20Assessment.JPG" width="1500"/>
+<img src="https://github.com/Harry84/DevOps-Core-Practical-Project/blob/ansible/images/Project%202%20Risk%20Assessment.JPG" width="2000"/>
 </p>
 
 # Description of services
@@ -67,6 +67,10 @@ A key required facet of the project is one of continous deployment, such that th
 # Testing Stage
 
 We include a tests folder in each of the respective services containing a test_ unit test relating to its parent service.  Is the service reachable (do we get a 200 response) and are we getting back the data we put in in the way we expect?  The testing process is the first stage in the Jenkinsfile.  We need to make sure all the individual components are working in the way we want them to before we instruct Jenkins to build our app.  The testing process is therefore a necessary first stage in continuous deployment.
+
+<p align="center">
+<img src="https://github.com/Harry84/DevOps-Core-Practical-Project/blob/ansible/images/testing%20project%202.JPG" width="1000"/>
+</p>
 
 # Build Stage
 
