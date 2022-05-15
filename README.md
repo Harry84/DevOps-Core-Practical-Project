@@ -37,7 +37,7 @@ I used a trello board during this project for planning and prioritisation of tas
 [Trello Board](https://trello.com/b/ufgHK3VC/pilot-tiers)
 
 <p align="center">
-<img src="https://github.com/Harry84/DevOps-Core-Practical-Project/blob/ansible/images/Project%202%20trello.JPG" width="800"/>
+<img src="https://github.com/Harry84/DevOps-Core-Practical-Project/blob/ansible/images/Project%202%20trello.JPG" width="1000"/>
 </p>
 
 #  ERD
@@ -47,7 +47,7 @@ I used a trello board during this project for planning and prioritisation of tas
 [Risk Assessment](https://docs.google.com/spreadsheets/d/1SNXdg196MBaFU69MoC1mMkt9sLWLh0RzoJxBbpi-0C8/edit#gid=0)
 
 <p align="center">
-<img src="https://github.com/Harry84/DevOps-Core-Practical-Project/blob/ansible/images/Project%202%20Risk%20Assessment.JPG" width="800"/>
+<img src="https://github.com/Harry84/DevOps-Core-Practical-Project/blob/ansible/images/Project%202%20Risk%20Assessment.JPG" width="1000"/>
 </p>
 
 # Description of services
