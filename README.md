@@ -59,6 +59,10 @@ Service 1 aka front_end_api is what is displayed using render_template to my ind
 
 A key required facet of the project is one of continuous deployment, such that the end user may access the app and not experience any downtime or loss of service in the event changes to the codebase are being made through successive builds - essentially simulating how an app would function in the wild, albeit an extremely paired down version of one.  In order to meet this objective we use a combination of tools, namely Docker, Docker-Swarm, Jenkins and Ansible.  Once the app is functional and can be run using a docker-compose file, Dockerfiles for the respective services and an Nginx reverse-proxy, we can go about deploying it in a pipeline environment.  Firstly, the repo is uploaded to Github.  Secondly, we set up a Jenkins VM and configure a Jenkins Pipeline Job using our new repo.  Using a Jenkinsfile in our repo, we can lay out the various stages we require to test, build and deploy our app.
 
+<p align="center">
+<img src="https://github.com/Harry84/DevOps-Core-Practical-Project/blob/main/images/CDP.jpg" width="1000"/>
+</p>
+
 # Testing Stage
 
 We include a tests folder in each of the respective services containing a test_ unit test relating to its parent service.  Is the service reachable (do we get a 200 response) and are we getting back the data we put in in the way we expect?  The testing process is the first stage in the Jenkinsfile.  We need to make sure all the individual components are working in the way we want them to before we instruct Jenkins to build our app.  The testing process is therefore a necessary first stage in continuous deployment.  The below image shows the testing coverage attained in the project:
